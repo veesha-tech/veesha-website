@@ -1,0 +1,528 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@200;300;500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Raleway:wght@400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Gantari',
+        sans-serif;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Basic CSS */
+nav,
+section {
+    padding: 3em 7%;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+hr {
+    border-color: #000;
+}
+
+h3 {
+    font-size: 0.8em;
+}
+
+.heading {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.3em;
+    margin: 1em 0;
+}
+
+p {
+    line-height: 2.2em;
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+.btn {
+    margin-top: 0.6em;
+    padding: 1em 3em;
+    background: none;
+    cursor: pointer;
+}
+
+h2 {
+    margin-bottom: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Special CSS */
+.quote {
+    position: relative;
+    top: 1em;
+    left: 0.4em;
+    font-size: 5em;
+    color: rgba(100, 100, 100, 0.3);
+    z-index: -1;
+}
+
+.serial {
+    font-size: 6em;
+}
+
+/* Navigation Panel */
+#nav_section {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 1.45em;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+#brand_name {
+    font-size: 1.5em;
+}
+
+#nav_panel {
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+    list-style-type: none;
+    cursor: pointer;
+    color: #505050;
+}
+
+/* Header Section */
+#header_section {
+    padding: 10em 7%;
+}
+
+.header--content {
+    margin: 0;
+    position: absolute;
+    width: 45vw;
+    display: none;
+    /* Display Default */
+}
+
+/* Service Section */
+#service_section {
+    height: 230vh;
+}
+
+#service_section>p {
+    font-size: 1.3em;
+}
+
+.service--content:nth-child(even) {
+    text-align: right;
+}
+
+.service--content:nth-child(even)>.card--content {
+    margin-left: auto;
+}
+
+.card--content {
+    margin-top: 0.5em;
+    width: 33vw;
+}
+
+.card--content>h2 {
+    font-size: 1.45em;
+}
+
+
+/* Info Section */
+#info_section {
+    display: flex;
+    padding-top: 10vh;
+    justify-content: space-between;
+}
+
+.info--panel {
+    width: 60vw;
+    padding-right: 20vw;
+}
+
+.btn--contact>i {
+    padding-left: 1em;
+}
+
+/* Active Class and Hidden Class */
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.contact--active {
+    /* filter: brightness(0.4); */
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.info--img {
+    display: block;
+    margin-left: auto;
+    width: 25vw;
+}
+
+.cust--img {
+    display: block;
+    border-radius: 32px;
+}
+
+.query--call {
+    /* Important space */
+    margin-top: 3em;
+    margin-bottom: 2em;
+    width: 25vw;
+}
+
+.query--call>p {
+    margin-top: 2em;
+    grid-column-start: 3;
+}
+
+.breif {
+    width: 15vw;
+}
+
+.breif>p {
+    /* Important */
+    line-height: 24px;
+    color: #444;
+}
+
+/* Custom Info */
+.info--heading {
+    font-size: 3em;
+}
+
+.social--media {
+    margin: 21px 0 0;
+    padding: 2em 0;
+    font-size: 1.34em;
+    display: flex;
+}
+
+#brand_logo {
+    width: 10%;
+}
+
+/* Social Media */
+.content--head {
+    display: flex;
+}
+
+.content {
+    width: 600px;
+}
+
+.icon--social>i {
+    font-size: 2em;
+    padding-left: 0.35em;
+}
+
+.icon--social {
+    text-align: right;
+    width: 100%;
+}
+
+/* Information Image */
+#img_team {
+    width: 100%;
+    height: 90vh;
+    padding-top: 7em;
+}
+
+#img_team>img {
+    width: 55%;
+}
+
+.tag--line {
+    font-size: 32px;
+    margin: 0.45em 0;
+}
+
+.tag--content {
+    width: 650px;
+    padding: 3em 7%;
+    float: right;
+}
+
+/* Contact card CSS */
+.contact--container {
+    padding: 4em;
+    width: 35%;
+    position: fixed;
+    z-index: 999;
+    left: 33vw;
+    margin: 7em auto;
+    background-color: rgba(150, 150, 150, 0.45);
+    backdrop-filter: blur(15px);
+}
+
+.contact--details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1em;
+}
+
+#contact>h2 {
+    border-width: 5px;
+    border-color: rgba(200, 200, 200, 0.4);
+    border-bottom-style: solid;
+}
+
+.contact--details>div {
+    font-size: 1.45em;
+}
+
+.contact--icons>h2 {
+    margin-top: 1em;
+    margin-bottom: 0.76em;
+    font-size: 1.34em;
+}
+
+.contact-icons {
+    float: right;
+}
+
+.icons>i {
+    font-size: 2em;
+    padding-right: 1em;
+}
+
+.btn--ok {
+    padding: 0;
+    width: 55%;
+    height: 40%;
+    margin-top: auto;
+    margin-left: auto;
+    background: none;
+}
+
+/* End of laptop and desktop responsive */
+
+
+/* Hover properties */
+.nav--item:active,
+.nav--item:hover {
+    color: #fff;
+}
+
+.btn:hover,
+.btn--ok:hover {
+    color: #121212;
+    border-color: #fafafa;
+    border-style: solid;
+}
+
+i:hover {
+    color: #859595;
+}
+
+.icons>i:hover {
+    color: #fff;
+}
+
+
+/* Media query Mobile and Tablet */
+@media screen and (max-width: 1000px) {
+
+    /* Navigation Menu */
+    #nav_section {
+        display: flex;
+        align-items: center;
+        z-index: 100;
+    }
+
+    /* Nav panel */
+    #nav_panel {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: absolute;
+        width: 30%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        z-index: 100;
+        top: -1000px;
+        margin: 0;
+    }
+
+    #nav_panel.nav--active {
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        width: 50%;
+        height: 30vh;
+        background: rgba(200, 200, 200, 0.55);
+        display: table;
+        align-items: center;
+        padding: 2em 0;
+    }
+
+    .nav--item {
+        color: #000;
+        text-align: center;
+        font-size: 1.34em;
+        padding: 1em 0;
+    }
+
+    .nav--item>a {
+        font-size: inherit;
+    }
+
+    /* Mobile toggler */
+    #mobile_toggler {
+        width: 35px;
+    }
+
+    .ham--line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin: 8px 0;
+        background: #444;
+    }
+
+    /* Header Section */
+    #header_section {
+        background: #ddd;
+    }
+
+    .header--content {
+        width: 70vw;
+    }
+
+    #header_section>.info--img {
+        display: none;
+    }
+
+    /* Image Team */
+    #img_team {
+        width: 100vw;
+    }
+
+    #img_team>.tag--content {
+        float: none;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #img_team>img {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /* Service Content */
+    .service--content:nth-child(even),
+    .service--content:nth-child(odd),
+    .card--content {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Info Content */
+    #info_section {
+        background: #eee;
+        height: 130vh;
+    }
+
+    .cust--img {
+        display: none;
+    }
+
+    .info--panel {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #service_section {
+        height: 280vh;
+    }
+
+
+    .btn--contact {
+        width: 45vw;
+    }
+
+    /* Active mobile toggler */
+    .is-active>.ham--line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .is-active>.ham--line:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .is-active>.ham--line:nth-child(3) {
+        transform: translateY(-15px) rotate(-45deg);
+    }
+
+    /* Contact Container */
+    .contact--container {
+        width: 100%;
+        left: 0;
+        margin: 10vh auto 0;
+        transition: all 0.3s ease;
+    }
+
+    .contact--container>h2 {
+        font-size: 1.3em;
+    }
+
+    .icons>i {
+        font-size: 1.2em;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    /* Header Section */
+    #header_section {
+        height: 200vh;
+    }
+
+    /* Team Image */
+    #img_team {
+        height: 150vh;
+    }
+
+    /* Services */
+    #service_section {
+        height: 300vh;
+    }
+
+    #info_section {
+        height: 300vh;
+    }
+
+    .btn--contact {
+        width: 55vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /* Services */
+    #service_section {
+        height: 400vh;
+    }
+
+    #info_section {
+        height: 230vh;
+    }
+
+}
