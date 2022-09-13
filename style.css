@@ -222,7 +222,7 @@ a {
 }
 
 .content {
-    width: 600px;
+    width: 100%;
 }
 
 .icon--social>i {
@@ -231,8 +231,12 @@ a {
 }
 
 .icon--social {
-    text-align: right;
+    text-align: left;
     width: 100%;
+}
+
+.icon--social>i {
+    padding-left: 0.45em;
 }
 
 /* Information Image */
@@ -488,11 +492,21 @@ i:hover {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
+
+    #nav_section {
+        width: 100vw;
+    }
 
     /* Header Section */
     #header_section {
         height: 200vh;
+    }
+
+    .icon--social>i {
+        text-align: left;
+        padding-left: 0;
+        padding-right: 1em;
     }
 
     /* Team Image */
@@ -502,7 +516,7 @@ i:hover {
 
     /* Services */
     #service_section {
-        height: 300vh;
+        height: 400vh;
     }
 
     #info_section {
@@ -512,14 +526,29 @@ i:hover {
     .btn--contact {
         width: 55vw;
     }
-}
 
-@media screen and (max-width: 400px) {
+    .social--media {
+        width: 100%;
+        display: block;
+    }
 
     /* Services */
     #service_section {
-        height: 400vh;
+        height: 600vh;
+        overflow: hidden;
     }
+
+    .contact--container>.heading {
+        font-size: 13px;
+    }
+
+    .contact--details>div {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
 
     #info_section {
         height: 230vh;
